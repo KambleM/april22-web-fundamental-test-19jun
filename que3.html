@@ -1,26 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ordered list</title>
+<html>
+  <head> </head>
+  <body>
     
-
-</head>
-<body>
-    <div>
-        <ol>
-            <li>Delhi</li>
-            <li>Mumbai</li>
-            <li>Jaipur</li>
-            <li>Kolkata</li>
-            <li>Indore</li>
-
-            
-        </ol>
-
-    </div>
-    
-</body>
+    <ol id="myList"></ol>
+    <script>
+      let  city = ['Delhi', 'Mumbai', 'Jaipur','Kolkata','Indore' ]; 
+  
+      let list = document.getElementById("myList");
+  
+      city.forEach((item) => {
+        let li = document.createElement("li");
+        li.innerText = item;
+        list.appendChild(li);
+      });
+    </script>
+  </body>
 </html>
